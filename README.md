@@ -23,3 +23,10 @@ Made with love in Russia! 🇷🇺 ♥
 # DO NOT CALL ME A SKID!
 Credits are in the program's "About" section,
 I AM LEARNING NOT SKIDDING!
+## Doctor Clippy says...
+```
+╔═╗
+^^║   Hello, I'm Dr. Clippit!
+╚╝║   I'm here to help you! :)
+╚═╝
+```
