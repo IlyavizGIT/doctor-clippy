@@ -23,7 +23,8 @@ Converted with Bat to EXE converter by Fatih Kodak.
 
 Made with love in Russia! 🇷🇺 ♥
 # DO NOT CALL ME A SKID!
-Credits are in the program's "About" section,
+"Special Thanks" are in the program's "About" section.
+
 I AM LEARNING NOT SKIDDING!
 ## Doctor Clippy says...
 ```
