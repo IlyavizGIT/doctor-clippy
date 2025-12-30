@@ -11,7 +11,7 @@ This is a lightweight program, which is written in batch and made in a single da
 - System Information (Requires WIMC!)
 - A secret and some easter eggs!
 ## Download
-[Click to download here](github.com/IlyavizGIT/doctor-clippy/blob/main/drclippy.exe)
+[Click to download here](drclippy.exe)
 ## How to use
 1. Get the program and run it as an **ADMINISTRATOR**!
 2. Choose an option
