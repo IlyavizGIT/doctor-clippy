@@ -33,3 +33,6 @@ I AM LEARNING NOT SKIDDING!
 ╚╝║   I'm here to help you! :)
 ╚═╝
 ```
+
+MIT LICENSED
+ALL RIGHTS STOLEN (😈)
