@@ -35,4 +35,7 @@ I AM LEARNING NOT SKIDDING!
 ```
 
 MIT LICENSED
+
 ALL RIGHTS STOLEN (😈)
+# If you have any suggestions or bugs found, share it in "Issues" tab!
+**You are awesome! <3**
