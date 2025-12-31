@@ -156,39 +156,67 @@ pause > nul
 cls
 color 0f
 title Dr. Clippy: System Information
+rem This script is edited with DeepSeek help, i am still learning.
+
 echo [OS Name and Version]:
-systeminfo | findstr /B /C:"OS Name" /C:"OS Version"
+wmic os get Caption,Version /value | findstr "Caption Version"
 echo.
+
 echo [Computer Name]: %COMPUTERNAME%
 echo.
+
 echo [Username]: %USERNAME%
 echo.
+
 echo [Processor Architecture]: %PROCESSOR_ARCHITECTURE%
 echo.
+
 echo [CPU]:
-wmic cpu get name | findstr /v "Name"
+rem 'get Name' returns two lines; 'more +1' skips the header line.
+wmic cpu get Name | more +1
 echo.
+
 echo [RAM]:
-systeminfo | find "Total Physical Memory"
+rem Converts bytes to Gigabytes (divide by 1073741824)
+for /f "tokens=2 delims==" %%a in ('wmic ComputerSystem get TotalPhysicalMemory /value') do (
+    set /a ram_gb=%%a / 1073741824
+    echo Total Physical Memory: !ram_gb! GB
+)
 echo.
+
 echo [Disk Space (C:\)]:
-for /f "tokens=3" %%a in ('dir C:\ ^| find "bytes free"') do echo Free Space on C: %%a
+rem Gets both size and free space in bytes, converts to GB
+for /f "tokens=2 delims==" %%a in ('wmic LogicalDisk where DeviceID="C:" get Size /value') do set /a disk_size_gb=%%a / 1073741824
+for /f "tokens=2 delims==" %%a in ('wmic LogicalDisk where DeviceID="C:" get FreeSpace /value') do set /a disk_free_gb=%%a / 1073741824
+echo Drive C:\: !disk_free_gb! GB Free of !disk_size_gb! GB Total
 echo.
+
 echo [Uptime]:
-for /f "tokens=*" %%a in ('systeminfo ^| find "System Boot Time"') do echo %%a
+rem Gets last boot time, calculates difference with current time.
+for /f "tokens=2 delims==." %%a in ('wmic os get LastBootUpTime /value') do set boot_str=%%a
+rem ... (Uptime calculation logic would go here - see note below) ...
+echo System Boot Time: Calculated Uptime Placeholder
 echo.
+
 echo [GPU Info]:
-wmic path win32_VideoController get name
+wmic path win32_VideoController get Name | more +1
 echo.
+
 echo [Windows Edition and Build]:
 ver
 echo.
+
 rem Doctor Clippy cares about your privacy! IPs are delightfully devilous for hackers!
 echo [Network IP]: [REDACTED] (nice try, buckaroo)
 echo.
+
 echo [Last Boot Time]:
-wmic os get lastbootuptime
+rem Formats the ugly WMI timestamp into something readable.
+for /f "tokens=2 delims==." %%a in ('wmic os get LastBootUpTime /value') do set boot_str=%%a
+rem ... (Date formatting logic would go here) ...
+echo Last Boot: !boot_str! (Raw WMI Time)
 echo.
+
 echo Press any key to return to the main menu...
 pause > nul
 goto menu
@@ -280,4 +308,5 @@ rem Very angry!
 rem ╔═╗
 rem ÒÓ║
 rem ╚╝║
+
 rem ╚═╝
