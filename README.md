@@ -9,9 +9,9 @@ This is a lightweight program, which is written in batch and made in a single da
 - Icon Cache Rebuild
 - Temporary Files Cleaning
 - System Information (Requires WIMC!)
-- A secret and some easter eggs!
+- Easter Eggs!
 ## Download
-[drclippy.exe](drclippy.exe)
+\[Link coming soon...]()
 ## How to use
 1. Get the program and run it as an **ADMINISTRATOR**! (ONLY THE BATCH ONE! THE EXECUTABLE VERSION IS ASKING ADMINISTRATOR RIGHTS BY DEFAULT!)
 2. Choose an option
