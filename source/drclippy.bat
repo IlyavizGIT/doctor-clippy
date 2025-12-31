@@ -16,7 +16,7 @@ if "%1"=="admin" (
 :menu
 color 0f
 title Dr. Clippy: Main Menu
-echo                            Doctor Clippy v1.1
+echo                          Doctor Clippy v1.1.1
 echo -----------------------------------------------------------------------
 echo [1]: SFC
 echo [2]: Full Virus Scanning
@@ -228,7 +228,7 @@ echo              ABOUT
 echo -----------------------------------
 echo.
 echo    Doctor Clippy by Phantom35
-echo          Version: 1.1
+echo         Version: 1.1.1
 echo.
 echo         Special Thanks:
 echo       DeepSeek - Helping
@@ -242,15 +242,17 @@ echo -----------------------------------
 echo.
 echo Press any key to return to the main menu...
 pause > nul
+cls
 goto menu
 
 :secret
 color 0b
 rem ASCII Clippy art by SHS and icoeye.
-echo ╔═╗
-echo ^^║
-echo ╚╝║
-echo ╚═╝
+chcp 6501 > nul
+echo         ╔═╗
+echo         ^^║
+echo         ╚╝║
+echo         ╚═╝
 echo.
 echo You are very sneaky, you've found
 echo the secret! :')
@@ -308,6 +310,6 @@ rem Very angry!
 rem ╔═╗
 rem ÒÓ║
 rem ╚╝║
-
 rem ╚═╝
+
 
