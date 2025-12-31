@@ -11,7 +11,8 @@ This is a lightweight program, which is written in batch and made in a single da
 - System Information (Requires WIMC!)
 - Easter Eggs!
 ## Download
-\[Link coming soon...]()
+EXE Version - [drclippy_exe](drclippy_exe.exe)
+Batch Version [drclippy.bat](source/drclippy.bat)
 ## How to use
 1. Get the program and run it as an **ADMINISTRATOR**! (ONLY THE BATCH ONE! THE EXECUTABLE VERSION IS ASKING ADMINISTRATOR RIGHTS BY DEFAULT!)
 2. Choose an option
