@@ -249,10 +249,10 @@ goto menu
 color 0b
 rem ASCII Clippy art by SHS and icoeye.
 chcp 866 > nul
-echo          ╔═╗
-echo          ^^║
-echo          ╚╝║
-echo          ╚═╝
+echo          тХФтХРтХЧ
+echo          ^^тХС
+echo          тХЪтХЭтХС
+echo          тХЪтХРтХЭ
 echo.
 echo You are very sneaky, you've found
 echo the secret! :')
@@ -312,6 +312,7 @@ rem ╔═╗
 rem ÒÓ║
 rem ╚╝║
 rem ╚═╝
+
 
 
 
