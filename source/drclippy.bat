@@ -249,14 +249,15 @@ goto menu
 color 0b
 rem ASCII Clippy art by SHS and icoeye.
 chcp 866 > nul
-echo          тХФтХРтХЧ
-echo          ^^тХС
-echo          тХЪтХЭтХС
-echo          тХЪтХРтХЭ
+echo        ╔═╗
+echo        ^^║
+echo        ╚╝║
+echo        ╚═╝      
 echo.
 echo You are very sneaky, you've found
 echo the secret! :')
 timeout /t 5 /nobreak > nul
+cls
 goto menu
 
 :qt
@@ -312,6 +313,7 @@ rem ╔═╗
 rem ÒÓ║
 rem ╚╝║
 rem ╚═╝
+
 
 
 
