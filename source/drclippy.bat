@@ -16,7 +16,7 @@ if "%1"=="admin" (
 :menu
 color 0f
 title Dr. Clippy: Main Menu
-echo                          Doctor Clippy v1.1.3
+echo                          Doctor Clippy v1.1.4
 echo -----------------------------------------------------------------------
 echo [1]: SFC
 echo [2]: Full Virus Scanning
@@ -228,7 +228,7 @@ echo              ABOUT
 echo -----------------------------------
 echo.
 echo    Doctor Clippy by Phantom35
-echo         Version: 1.1.3
+echo         Version: 1.1.4
 echo.
 echo         Special Thanks:
 echo       DeepSeek - Helping
@@ -313,6 +313,7 @@ rem ╔═╗
 rem ÒÓ║
 rem ╚╝║
 rem ╚═╝
+
 
 
 
