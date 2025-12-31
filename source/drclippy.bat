@@ -247,7 +247,7 @@ goto menu
 :qt
 exit /b
 
-rem Easter Eggs WOOH!
+rem Easter Eggs, WOOH!!
 rem
 rem Diskette art by MGA (possibly)
 rem  _.........._
@@ -297,6 +297,7 @@ rem ╔═╗
 rem ÒÓ║
 rem ╚╝║
 rem ╚═╝
+
 
 
 
