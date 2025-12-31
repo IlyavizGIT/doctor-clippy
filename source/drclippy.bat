@@ -16,7 +16,7 @@ if "%1"=="admin" (
 :menu
 color 0f
 title Dr. Clippy: Main Menu
-echo                          Doctor Clippy v1.1.4
+echo                          Doctor Clippy v1.1.5
 echo -----------------------------------------------------------------------
 echo [1]: SFC
 echo [2]: Full Virus Scanning
@@ -35,7 +35,6 @@ if "%choice%"=="5" goto tempclr
 if "%choice%"=="6" goto sysinfo
 if "%choice%"=="7" goto abt
 if "%choice%"=="0" goto qt
-if "%choice%"=="1337" goto secret
 
 :sfc
 cls
@@ -228,7 +227,7 @@ echo              ABOUT
 echo -----------------------------------
 echo.
 echo    Doctor Clippy by Phantom35
-echo         Version: 1.1.4
+echo         Version: 1.1.5
 echo.
 echo         Special Thanks:
 echo       DeepSeek - Helping
@@ -242,21 +241,6 @@ echo -----------------------------------
 echo.
 echo Press any key to return to the main menu...
 pause > nul
-cls
-goto menu
-
-:secret
-color 0b
-rem ASCII Clippy art by SHS and icoeye.
-chcp 866 > nul
-echo        ╔═╗
-echo        ^^║
-echo        ╚╝║
-echo        ╚═╝      
-echo.
-echo You are very sneaky, you've found
-echo the secret! :')
-timeout /t 5 /nobreak > nul
 cls
 goto menu
 
@@ -313,6 +297,7 @@ rem ╔═╗
 rem ÒÓ║
 rem ╚╝║
 rem ╚═╝
+
 
 
 
